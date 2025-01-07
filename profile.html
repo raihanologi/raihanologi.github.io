@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Perusahaan - Simpan Pinjam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .transition-smooth {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-100 to-teal-100 shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-900">Pinjamify</h1>
+      <ul class="flex space-x-6 text-gray-700">
+        <li><a href="index.html" class="hover:text-teal-700 transition-smooth">Dashboard</a></li>
+        <li><a href="#about" class="hover:text-teal-700 transition-smooth">Tentang Kami</a></li>
+        <li><a href="#visi" class="hover:text-teal-700 transition-smooth">Visi & Misi</a></li>
+        <li><a href="#kontak" class="hover:text-teal-700 transition-smooth">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-blue-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-blue-900 mb-6">Tentang Perusahaan</h2>
+        <p class="text-gray-700 mb-8">Pinjamify adalah platform keuangan terpercaya yang menyediakan layanan simpan dan pinjam dengan keamanan tinggi serta kemudahan akses. Kami berkomitmen untuk membantu Anda mencapai tujuan finansial Anda dengan solusi terbaik.</p>
+        <img src="image/pic4.jpg" alt="Tentang Kami" class="rounded-lg shadow-lg mx-auto w-3/4 md:w-1/2">
+      </div>
+    </section>
+
+    <!-- Visi & Misi Section -->
+    <section id="visi" class="py-12 bg-teal-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6">Visi & Misi</h2>
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">Visi</h3>
+            <p class="text-gray-700">Menjadi mitra keuangan terpercaya untuk semua kalangan masyarakat, mendukung pertumbuhan ekonomi yang inklusif.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">Misi</h3>
+            <ul class="text-gray-700 text-left list-disc list-inside">
+              <li>Menyediakan layanan simpan dan pinjam yang aman, cepat, dan transparan.</li>
+              <li>Mengembangkan solusi digital untuk kemudahan pengguna.</li>
+              <li>Meningkatkan literasi keuangan di masyarakat.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-12 bg-blue-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6">Hubungi Kami</h2>
+        <p class="text-gray-700 mb-8">Kami selalu siap membantu Anda. Hubungi kami melalui kontak di bawah ini:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <h3 class="text-lg font-semibold text-teal-700 mb-2">Alamat</h3>
+            <p class="text-gray-600">Jl. Harapan Ortu No. 10, Depok, Indonesia</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <h3 class="text-lg font-semibold text-teal-700 mb-2">Kontak</h3>
+            <p class="text-gray-600">Email: info@simpanpinjam.com</p>
+            <p class="text-gray-600">Telepon: +62 123 456 7890</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-100 to-blue-100 text-gray-700 py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">© 2025 Pinjamify by Raihanologi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

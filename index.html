@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simpan Pinjam Raihan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .transition-smooth {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-100 to-teal-100 shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-900">Pinjamify by Raihanologi</h1>
+      <ul class="flex space-x-6 text-gray-700">
+        <li><a href="#dashboard" class="hover:text-teal-700 transition-smooth">Dashboard</a></li>
+        <li><a href="profile.html" class="hover:text-teal-700 transition-smooth">Profile</a></li>
+        <li><button id="loginButton" class="hover:text-teal-700 transition-smooth">Login</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="py-12 bg-blue-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-blue-900 mb-6">Selamat Datang Di Pinjamify</h2>
+        <p class="text-gray-700 mb-8">Kelola Keuanganmu Dengan Mudah dan Aman.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <img src="image/pic3.jpg" alt="Pinjaman" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">💸 Pinjam Uang</h3>
+            <p class="text-gray-600">Ajukan pinjaman berbunga rendah dengan cepat dan mudah.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <img src="image/pic2.jpg" alt="Simpan Uang" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">🛡️ Simpan Uang</h3>
+            <p class="text-gray-600">Nikmati layanan penghematan uang yang aman dan nyaman.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <img src="image/pic1.jpg" alt="Keuntungan" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">📈 Keuntungan</h3>
+            <p class="text-gray-600">Dapatkan keuntungan dari bunga tabungan Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 bg-teal-50">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">❓ Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <h3 class="text-lg font-semibold text-blue-900">Apa Itu Pinjamify?</h3>
+            <p class="text-gray-700">Sebuah platform yang mudah dan aman untuk menyimpan dan meminjam uang.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <h3 class="text-lg font-semibold text-blue-900">Dari mana saya bisa memulai?</h3>
+            <p class="text-gray-700">Registrasi untuk membuat akun dan pilih layanan yang kamu inginkan.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <h3 class="text-lg font-semibold text-blue-900">Apa data saya aman?</h3>
+            <p class="text-gray-700">Kami menjamin keamanan data dengan sistem enkripsi modern.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-100 to-blue-100 text-gray-700 py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">© 2025 Pinjamify by Raihanologi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Login -->
+<div id="loginModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+    <h3 class="text-2xl font-semibold text-center text-gray-700 mb-4">Login</h3>
+    <form id="loginForm" class="space-y-6">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-600">Email</label>
+        <input type="email" id="email" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email" required />
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+        <input type="password" id="password" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password" required />
+      </div>
+      <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 px-4 rounded-lg transform transition-all hover:bg-gradient-to-l hover:scale-105">Login</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
